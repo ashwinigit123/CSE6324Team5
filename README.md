@@ -21,11 +21,19 @@ Python
 6.Evaluating the model with training and testing dataset.
 7.Obtaining the final grouped/clustered projects
 # Iteration 1 Activities: Feature Extraction and Data Pre-Processing
-Step 1: Observed all the tables in the given repository to identify which features woyuld be best suited for our clustering approach
+Step 1: Observed all the tables in the given repository to identify which features woyuld be best suited for our clustering approach.
+
 Step 2: Decided on using Summary and Category as important features to idenitfy the grouping based on the category of the project.
+
 Step 3: Applying PreProcessing on "Summary" coloumn.The Summary coloumn contains the summary of the projects that we have, and category contains the category the project belongs to. Since the values in these coloumn are not numerical but categorical or textual, we would have to perform text preprocessing in order to begin with feature extraction.
+
 Step 4: We used the text preprocessing for Natural launguage to convert the sentences in the "Summary" coloumn to a format that is understandable by the machine.
+
 Step 4.a) Tokenization: The process of converting Sentences to tokens.
+
 Step 4.b) Filtering Tokens: Removing Tokens which contain numerical values or does not conatin any textual value.
+
 Step 4.c) Stemming: Bringing down a word from its various forms to its root word. This Process allows us to establish meaning to different forms of the same words without having to deal with each form separately. 
+
 Step 5: TFIDF Vectorization: In this step we create a TFIDF vector matrix for the "Summary" column. This process converts the words obtained after performing step 4 on "Summary" column,into numerical values so that we can apply clustering algorithm on pre-processed data.
+
